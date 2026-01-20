@@ -1,12 +1,13 @@
 🔐 Microservice 1 : Service d’Authentification (Auth Service)
-📌 Description générale
+
+- Description générale
 
 Le microservice d’authentification (Auth Service) est le point d’entrée sécurisé de la plateforme.
 Il est responsable de la gestion des identités, de l’authentification des utilisateurs et de la sécurisation des échanges entre les différents microservices via des jetons JWT.
 
 Ce microservice garantit que seuls les utilisateurs autorisés peuvent accéder aux fonctionnalités de la plateforme, en fonction de leurs rôles et permissions.
 
-🎯 Objectifs principaux
+ - Objectifs principaux
 
 Assurer une authentification sécurisée des utilisateurs
 
@@ -18,7 +19,7 @@ Centraliser la gestion des rôles et des autorisations
 
 Fournir une base de sécurité commune à tous les microservices
 
-⚙️ Fonctionnalités clés
+- Fonctionnalités clés
 
 Création de comptes utilisateurs
 
@@ -38,7 +39,7 @@ Gestion des erreurs de sécurité (401, 403, 409)
 
 Journalisation des tentatives d’authentification
 
-🔐 Sécurité
+- Sécurité
 
 Architecture stateless
 
@@ -52,13 +53,13 @@ Protection contre les accès non autorisés
 
 Intégration avec une Gateway (Spring Cloud Gateway)
 
-🔗 Endpoints principaux
+- Endpoints principaux
 Méthode	Endpoint	Description
 POST	/api/v1/auth/signup	Inscription d’un nouvel utilisateur
 POST	/api/v1/auth/login	Authentification et génération du JWT
 GET	/api/v1/auth/validate	Validation d’un token JWT
 GET	/api/v1/auth/me	Informations sur l’utilisateur connecté
-🧩 Interactions avec les autres microservices
+- Interactions avec les autres microservices
 
 Fournit des JWT utilisés par les autres microservices
 
@@ -68,7 +69,7 @@ Les microservices métiers se basent sur les rôles contenus dans le JWT
 
 Assure une sécurité centralisée et cohérente
 
-🛠️ Technologies utilisées
+- Technologies utilisées
 
 Java 17 / 21
 
@@ -86,7 +87,7 @@ Maven
 
 Lombok
 
-📈 Avantages
+- Avantages
 
 Sécurité centralisée
 
@@ -98,7 +99,7 @@ Architecture moderne et conforme aux bonnes pratiques
 
 Réduction des risques liés aux accès non autorisés
 
-🧠 Résumé
+- Résumé
 
 Le microservice d’authentification constitue le socle de sécurité de la plateforme.
 Il garantit l’identité des utilisateurs, protège les ressources et permet une communication sécurisée entre tous les composants du système.
